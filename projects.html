@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joshua Brown - Projects</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="portfolio-page">
+        <nav>
+            <div class="nav-container">
+                <a href="index.html" class="logo">Joshua Brown</a>
+                <ul class="nav-tabs">
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="experience.html">Experience</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="projects.html" class="active">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <a href="index.html" class="back-btn">← Back</a>
+            </div>
+        </nav>
+
+        <div class="container">
+            <div class="section">
+                <h2>Projects</h2>
+
+                <div class="course-section">
+                    <h3>Internet, Web & Cloud Systems</h3>
+                    <div class="projects-grid">
+
+                        <div class="project-card">
+                            <h4>Fantasy Basketball AI Assistant</h4>
+                            <p class="description">Full-stack Flask web app that lets users query their Yahoo Fantasy
+                                Sports leagues through a conversational AI interface. Authenticates via OAuth2, calls 17
+                                Yahoo Fantasy API tools, and uses Google Gemini AI to synthesize natural-language
+                                responses. Maintains session-aware conversation history across messages.</p>
+                            <div class="tech-tags">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Flask</span>
+                                <span class="tech-tag">Google Gemini AI</span>
+                                <span class="tech-tag">Yahoo Fantasy API</span>
+                                <span class="tech-tag">OAuth2</span>
+                                <span class="tech-tag">Docker</span>
+                                <span class="tech-tag">HTML/CSS</span>
+                            </div>
+                            <a href="https://github.com/MediocreThott/cloud-brown-jjb24/tree/main/final" target="_blank"
+                                class="project-link">View on GitHub</a>
+                        </div>
+
+                        <div class="project-card">
+                            <h4>GCP-Deployed Flask App with Cloud Datastore</h4>
+                            <p class="description">Guestbook web application deployed to Google Cloud Run with a NoSQL
+                                Cloud Datastore backend. Demonstrates serverless deployment, Gunicorn WSGI
+                                configuration, and integration with Google Cloud Platform services including Firestore.
+                            </p>
+                            <div class="tech-tags">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Flask</span>
+                                <span class="tech-tag">Google Cloud Run</span>
+                                <span class="tech-tag">Cloud Datastore</span>
+                                <span class="tech-tag">Docker</span>
+                                <span class="tech-tag">Gunicorn</span>
+                                <span class="tech-tag">GCP</span>
+                            </div>
+                            <a href="https://github.com/MediocreThott/cloud-brown-jjb24/tree/main/hw4" target="_blank"
+                                class="project-link">View on GitHub</a>
+                        </div>
+
+                        <div class="project-card">
+                            <h4>Docker Image Optimization</h4>
+                            <p class="description">Containerized a Flask application using two Dockerfiles -- an Alpine
+                                Linux minimal image and a full Ubuntu image -- to compare build size and dependency
+                                tradeoffs in production container design.</p>
+                            <div class="tech-tags">
+                                <span class="tech-tag">Docker</span>
+                                <span class="tech-tag">Alpine Linux</span>
+                                <span class="tech-tag">Ubuntu</span>
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Flask</span>
+                            </div>
+                            <a href="https://github.com/MediocreThott/cloud-brown-jjb24/tree/main/hw3" target="_blank"
+                                class="project-link">View on GitHub</a>
+                        </div>
+
+                        <div class="project-card">
+                            <h4>Flask Guestbook Web App</h4>
+                            <p class="description">Built a multi-route guestbook application with persistent SQLite
+                                storage using Flask. Implemented entry submission, database reads/writes, and dynamic
+                                page rendering across three routes.</p>
+                            <div class="tech-tags">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Flask</span>
+                                <span class="tech-tag">SQLite</span>
+                                <span class="tech-tag">HTML</span>
+                            </div>
+                            <a href="https://github.com/MediocreThott/cloud-brown-jjb24/tree/main/hw2" target="_blank"
+                                class="project-link">View on GitHub</a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="course-section">
+                    <h3>Web & Cloud Security</h3>
+                    <div class="projects-grid">
+
+                        <div class="project-card">
+                            <h4>JWT Algorithm Bypass</h4>
+                            <p class="description">Exploited servers that accept unsigned JWTs by forging tokens with
+                                the "alg: none" claim, escalating privileges from a standard user to administrator
+                                without a valid signature.</p>
+                            <div class="tech-tags">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">JWT</span>
+                                <span class="tech-tag">Authentication Bypass</span>
+                                <span class="tech-tag">PortSwigger</span>
+                            </div>
+                            <a href="https://github.com/MediocreThott/websec-brown-jjb24/tree/main/final"
+                                target="_blank" class="project-link">View on GitHub</a>
+                        </div>
+
+                        <div class="project-card">
+                            <h4>JWT Secret Brute-Force</h4>
+                            <p class="description">Cracked a weak HMAC JWT signing secret using a wordlist attack, then
+                                forged a new admin-level token to achieve privilege escalation and unauthorized account
+                                access.</p>
+                            <div class="tech-tags">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">JWT</span>
+                                <span class="tech-tag">HMAC</span>
+                                <span class="tech-tag">Brute-Force</span>
+                                <span class="tech-tag">Cryptography</span>
+                            </div>
+                            <a href="https://github.com/MediocreThott/websec-brown-jjb24/tree/main/final"
+                                target="_blank" class="project-link">View on GitHub</a>
+                        </div>
+
+                        <div class="project-card">
+                            <h4>JWK Header Injection</h4>
+                            <p class="description">Exploited a server that trusts attacker-supplied public keys embedded
+                                in the JWT header. Generated an RSA 2048-bit key pair, embedded the public key as a JWK
+                                in the token header, and signed with the private key to gain admin access.</p>
+                            <div class="tech-tags">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">JWT</span>
+                                <span class="tech-tag">RSA</span>
+                                <span class="tech-tag">JWK</span>
+                                <span class="tech-tag">Public Key Cryptography</span>
+                            </div>
+                            <a href="https://github.com/MediocreThott/websec-brown-jjb24/tree/main/final"
+                                target="_blank" class="project-link">View on GitHub</a>
+                        </div>
+
+                        <div class="project-card">
+                            <h4>JKU URL Injection & Path Traversal</h4>
+                            <p class="description">Two related attacks: exploited a server fetching JWK sets from a
+                                user-controlled URL (SSRF-adjacent), and used path traversal in the JWT "kid" parameter
+                                to point to /dev/null and sign with a null-byte secret.</p>
+                            <div class="tech-tags">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">JWT</span>
+                                <span class="tech-tag">SSRF</span>
+                                <span class="tech-tag">Path Traversal</span>
+                                <span class="tech-tag">JKU Injection</span>
+                            </div>
+                            <a href="https://github.com/MediocreThott/websec-brown-jjb24/tree/main/final"
+                                target="_blank" class="project-link">View on GitHub</a>
+                        </div>
+
+                        <div class="project-card">
+                            <h4>Authentication Credential Analysis</h4>
+                            <p class="description">Built a Python script to test login endpoints against real credential
+                                wordlists, capturing HTTP request/response pairs to identify valid username and password
+                                combinations through automated analysis.</p>
+                            <div class="tech-tags">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">HTTP</span>
+                                <span class="tech-tag">Authentication Testing</span>
+                                <span class="tech-tag">Credential Analysis</span>
+                            </div>
+                            <a href="https://github.com/MediocreThott/websec-brown-jjb24/tree/main/homework"
+                                target="_blank" class="project-link">View on GitHub</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="scroll-hint" id="scrollHint">
+        <span>Web &amp; Cloud Security</span>
+        <div class="hint-chevron"></div>
+    </div>
+
+    <script src="particles.js"></script>
+    <script>
+        const hint = document.getElementById('scrollHint');
+        const target = document.querySelector('.course-section:last-of-type');
+        const observer = new IntersectionObserver(([entry]) => {
+            if (entry.isIntersecting) hint.classList.add('hidden');
+            else hint.classList.remove('hidden');
+        }, { threshold: 0.1 });
+        observer.observe(target);
+    </script>
+</body>
+
+</html>
