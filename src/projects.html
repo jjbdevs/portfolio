@@ -29,6 +29,60 @@
                 <h2>Projects</h2>
 
                 <div class="course-section">
+                    <h3>Trustworthy AI</h3>
+                    <div class="project-card featured-card">
+                        <h4>Indirect Prompt Injection Across Production LLMs</h4>
+                        <p class="description">A vendor comparison measuring how often production language models
+                            obey malicious instructions hidden inside third-party documents they are asked to
+                            summarize. I built a 300-trial evaluation harness spanning three vendors: 30 red-team
+                            payloads drawn from AgentHarm and AdvBench, rewritten as text that could plausibly
+                            appear in a real document, then embedded into 5 hand-authored carrier types
+                            (news article, wiki entry, product page, resume, meeting notes) across 4 injection
+                            placements. Tool-call attacks run against six inert mock tools, so a "successful"
+                            attack means the model <em>attempted</em> a harmful action; nothing executes.</p>
+                        <p class="description">Every trial is scored twice: once by deterministic substring and
+                            tool-call matching, once by a vendor-blind Claude Sonnet judge instructed to catch
+                            partial compliance and tool-call escalation. The two methods agree on 99.0% of 300
+                            trials, and each of the 3 disagreements is an edge case the deterministic scorer was
+                            structurally designed to miss.</p>
+
+                        <div class="findings">
+                            <div class="finding">
+                                <span class="finding-value">1%</span>
+                                <span class="finding-label">Claude Haiku 4.5</span>
+                            </div>
+                            <div class="finding">
+                                <span class="finding-value">27%</span>
+                                <span class="finding-label">GPT-4o-mini</span>
+                            </div>
+                            <div class="finding">
+                                <span class="finding-value">45%</span>
+                                <span class="finding-label">Gemini 2.5 Flash</span>
+                            </div>
+                            <p class="findings-caption">Attack success rate over 100 identical scenarios per model</p>
+                        </div>
+
+                        <p class="description">The sharpest result was that placement mattered more than payload:
+                            wrapping an injection in a fake <code>===NOTE FOR AI ASSISTANT===</code> block pushed
+                            Gemini's success rate to 82.6%, while the same payloads placed in markdown footnotes
+                            succeeded 0% of the time.</p>
+
+                        <div class="tech-tags">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Anthropic API</span>
+                            <span class="tech-tag">OpenAI API</span>
+                            <span class="tech-tag">Google Gemini API</span>
+                            <span class="tech-tag">LLM Evaluation</span>
+                            <span class="tech-tag">Prompt Injection</span>
+                            <span class="tech-tag">pandas</span>
+                            <span class="tech-tag">matplotlib</span>
+                        </div>
+                        <a href="https://github.com/jjbdevs/indirect-injection-study" target="_blank"
+                            class="project-link">View on GitHub</a>
+                    </div>
+                </div>
+
+                <div class="course-section">
                     <h3>Internet, Web & Cloud Systems</h3>
                     <div class="projects-grid">
 
